@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Code_First_Yaklaşımında_Tablo_İlişkilendirme.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(PatikaSecondDbContext))]
     [Migration("20250731173252_Initial")]
     partial class Initial
     {

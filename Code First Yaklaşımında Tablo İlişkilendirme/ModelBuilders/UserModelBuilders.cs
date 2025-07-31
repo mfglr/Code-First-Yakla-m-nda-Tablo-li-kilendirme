@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Code_First_Yaklaşımında_Tablo_İlişkilendirme.ModelBuilders
 {
-    public class AuthorModelBuilders : IEntityTypeConfiguration<Author>
+    public class UserModelBuilders : IEntityTypeConfiguration<User>
     {
-        public void Configure(EntityTypeBuilder<Author> builder)
+        public void Configure(EntityTypeBuilder<User> builder)
         {
             builder
-                .HasMany(x => x.Books)
-                .WithOne(x => x.Author)
-                .HasForeignKey(x => x.AuthorId);
+                .HasMany(x => x.Posts)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId);
         }
     }
 }
