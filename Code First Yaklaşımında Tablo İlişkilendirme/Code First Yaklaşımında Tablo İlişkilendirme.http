@@ -1,0 +1,6 @@
+@Code_First_Yaklaşımında_Tablo_İlişkilendirme_HostAddress = http://localhost:5158
+
+GET {{Code_First_Yaklaşımında_Tablo_İlişkilendirme_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
